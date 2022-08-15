@@ -8,12 +8,12 @@
         <div class="relative h-full">
           <div class="sticky flex">
             <div class="block w-56 border-r border-b border-gray-300">
-              <div class="flex p-4">
+              <div class="flex px-6 pt-6 pb-4">
                 <p class="text-md font-semibold">
                   Menu
                 </p>
               </div>
-              <div class="flex px-4 py-2">
+              <div class="flex px-6 py-2">
                 <nav class="text-sm font-medium">
                   <ul class="mb-6 space-y-2">
                     <li>
@@ -30,8 +30,17 @@
                 </nav>
               </div>
             </div>
-            <div class="flex-1">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis rerum et nostrum, officiis ea accusantium numquam rem illo, itaque eum velit eos exercitationem illum voluptates similique nobis dignissimos mollitia dolor!</p>
+            <div class="flex p-6">
+              <div class="space-y-2">
+                <div class="flex">
+                  <h1 class="text-4xl font-extrabold">
+                    Stack Developer Survey
+                  </h1>
+                </div>
+                <p class="text-lg text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
             </div>
           </div>
         </div>
