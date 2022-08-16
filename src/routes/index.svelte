@@ -4,8 +4,8 @@
   </div>
   <main class="">
     <div class="w-full">
-      <div class="flex">
-        <div class="relative h-full">
+      <div class="flex-1">
+        <div class="h-full">
           <div class="sticky flex">
             <div class="block w-56 border-r border-b border-gray-300">
               <div class="flex px-6 pt-6 pb-4">
@@ -30,16 +30,23 @@
                 </nav>
               </div>
             </div>
-            <div class="flex p-6">
-              <div class="space-y-2">
-                <div class="flex">
-                  <h1 class="text-4xl font-extrabold">
-                    Stack Developer Survey
-                  </h1>
+            <div class="flex-1">
+              <div class="h-full p-6">
+                <div class="flex-1 h-full">
+                  <div class="space-y-2">
+                    <h1 class="text-4xl font-extrabold">
+                      Stack Developer Survey
+                    </h1>
+                    <p class="text-lg text-gray-600">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                  <div class="space-y-4 py-4">
+                    <div class="w-full bg-sky-800">
+                      a
+                    </div>
+                  </div>
                 </div>
-                <p class="text-lg text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
               </div>
             </div>
           </div>
