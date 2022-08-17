@@ -6,28 +6,34 @@
     <div class="w-full">
       <div class="flex-1">
         <div class="h-full">
-          <div class="sticky flex">
-            <div class="block w-80 border-r border-b border-gray-300">
-              <div class="flex px-6 pt-6 pb-4">
-                <p class="text-md font-semibold">
-                  Menu
-                </p>
-              </div>
-              <div class="flex px-6 py-2">
-                <nav class="text-sm font-medium">
-                  <ul class="mb-6 space-y-2">
-                    <li>
-                      <p>
-                        1st element
+          <div class="flex">
+            <div class="w-80 border-r border-b border-gray-300">
+              <div class="h-full">
+                <div class="sticky top-0">
+                  <div class="block">
+                    <div class="flex px-6 pt-6 pb-4">
+                      <p class="text-md font-semibold">
+                        Menu
                       </p>
-                    </li>
-                    <li>
-                      <p>
-                        2nd element
-                      </p>
-                    </li>
-                  </ul>
-                </nav>
+                    </div>
+                    <div class="flex px-6 py-2">
+                      <nav class="text-sm font-medium">
+                        <ul class="mb-6 space-y-2">
+                          <li>
+                            <p>
+                              1st element
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              2nd element
+                            </p>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="flex-1">
@@ -64,6 +70,7 @@
                       </button>
                     </div>
                   </div>
+                  <br><br><br><br>
                 </div>
               </div>
             </div>
