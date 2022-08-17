@@ -7,7 +7,7 @@
       <div class="flex-1">
         <div class="h-full">
           <div class="flex">
-            <div class="w-80 border-r border-b border-gray-300">
+            <div class="hidden lg:block w-80 border-r border-b border-gray-300">
               <div class="h-full">
                 <div class="sticky top-0">
                   <div class="block">
@@ -37,32 +37,32 @@
               </div>
             </div>
             <div class="flex-1">
-              <div class="h-full p-6">
+              <div class="h-full p-4 lg:p-6">
                 <div class="flex-1 h-full">
                   <div class="space-y-2">
-                    <h1 class="text-4xl font-extrabold">
+                    <h1 class="text-2xl lg:text-4xl font-extrabold">
                       Stack Developer Survey
                     </h1>
-                    <p class="text-lg text-gray-600">
+                    <p class="lg:text-lg text-gray-600">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                   </div>
                   <div class="space-y-4 py-12">
-                    <div class="text-white rounded-md p-8 pb-20 bg-gradient-to-br from-blue-700 to-blue-400">
+                    <div class="text-white rounded-md p-6 lg:p-8 pb-20 bg-gradient-to-br from-blue-700 to-blue-400">
                       <!-- title card -->
-                      <h1 class="text-2xl font-semibold">
+                      <h1 class="text-xl lg:text-2xl font-semibold">
                         About this webpage
                       </h1>
-                      <hr class="w-8 border-2 my-2">
+                      <p class="bg-white w-8 h-0.5 my-2">
                       <!-- body card // create style comp for this? -->
-                      <p class="leading-relaxed pt-6 w-1/2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam possimus necessitatibus, sit consectetur quisquam quia soluta nulla aspernatur in eos repellat dolorem a voluptatem atque?
+                      <p class="leading-relaxed pt-6 lg:w-1/2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam possimus necessitatibus.
                       </p>
-                      <p class="leading-relaxed pt-6 w-1/2">
+                      <p class="leading-relaxed pt-6 lg:w-1/2">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed temporibus distinctio sunt odio, itaque nemo excepturi at laudantium quam quia, id commodi soluta. Reprehenderit eius voluptate ea quam deleniti similique.
                       </p>
-                      <p class="leading-relaxed pt-6 w-1/2">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis magni accusantium itaque hic tempore. Accusantium dignissimos molestias facilis natus dolore, sequi non quidem reprehenderit earum aut praesentium eius aperiam ipsa!
+                      <p class="leading-relaxed pt-6 lg:w-1/2">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis magni accusantium itaque hic tempore.
                       </p>
                       <br>
                       <button class="bg-slate-900 py-2 px-8 rounded-md">
