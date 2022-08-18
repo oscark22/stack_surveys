@@ -48,8 +48,7 @@
                     </p>
                   </div>
                   <div class="lg:flex pt-8 lg:pt-12 lg:space-x-6">
-                    <!-- create comp? -->
-                    <div class="text-white lg:w-7/12 rounded-md p-6 lg:p-8 pb-20 lg:pb-40 mb-40 sm:mb-4 bg-gradient-to-br from-emerald-500 to-blue-600">
+                    <div class="text-white lg:w-7/12 rounded-md p-6 lg:p-8 pb-20 lg:pb-40 mb-40 sm:mb-4 bg-gradient-to-tl from-emerald-500 to-blue-600">
                       <!-- title card -->
                       <h1 class="text-xl lg:text-2xl font-semibold">
                         About this webpage
@@ -67,7 +66,7 @@
                         Overview ->
                       </button>
                     </div>
-                    <div class="text-white lg:w-5/12 rounded-md p-6 lg:p-8 pb-40 lg:pb-40 mb-4 bg-gradient-to-tr from-blue-600 to-purple-500">
+                    <div class="text-white lg:w-5/12 rounded-md p-6 lg:p-8 pb-40 lg:pb-40 mb-4 bg-gradient-to-tl from-purple-500 to-blue-600">
                       <!-- title card -->
                       <h1 class="text-xl lg:text-2xl font-semibold">
                         About licencing
@@ -80,6 +79,16 @@
                       <p class="leading-relaxed pt-6">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, totam hic et voluptatem corporis, molestias tempora quae culpa temporibus nisi odit? Sed quas explicabo quibusdam sapiente aut corrupti aperiam ducimus.
                       </p>
+                    </div>
+                  </div>
+                  <!-- add as a component -->
+                  <div class="mt-20">
+                    <div class="flex-1">
+                      <div class="py-4 lg:px-8 rounded-md bg-gradient-to-r from-yellow-400 to-yellow-200">
+                        <h1 class="text-center font-bold lg:text-3xl">
+                          | Developer profile |
+                        </h1>
+                      </div>
                     </div>
                   </div>
                 </div>
