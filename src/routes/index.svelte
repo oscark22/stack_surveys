@@ -1,3 +1,7 @@
+<script lang="ts">
+import Banner from "$lib/banner.svelte";
+</script>
+
 <body>
   <div class="sticky flex justify-center py-3 border-b border-gray-300">
     <img src="placeholder.png" alt="placeholder">
@@ -81,15 +85,8 @@
                       </p>
                     </div>
                   </div>
-                  <!-- add as a component -->
                   <div class="mt-20">
-                    <div class="flex-1">
-                      <div class="py-4 lg:px-8 rounded-md bg-gradient-to-r from-yellow-400 to-yellow-200">
-                        <h1 class="text-center font-bold lg:text-3xl">
-                          | Developer profile |
-                        </h1>
-                      </div>
-                    </div>
+                    <Banner title='Developer profile' />
                   </div>
                 </div>
               </div>
