@@ -1,5 +1,6 @@
 <script lang="ts">
 import Banner from "$lib/banner.svelte";
+import Test from "$lib/charts/test.svelte";
 </script>
 
 <body>
@@ -86,7 +87,14 @@ import Banner from "$lib/banner.svelte";
                     </div>
                   </div>
                   <div class="mt-20">
-                    <Banner title='Developer profile' />
+                    <Banner
+                      title='Developer profile'
+                      from_color='from-yellow-400'
+                      to_color='to-yellow-200'
+                    />
+                  </div>
+                  <div>
+                    <Test />
                   </div>
                 </div>
               </div>
