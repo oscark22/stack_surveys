@@ -89,9 +89,17 @@ import Test from "$lib/charts/test.svelte";
                   <div class="mt-20">
                     <Banner
                       title='Developer profile'
-                      from_color='from-yellow-400'
-                      to_color='to-yellow-200'
+                      from_color='from-cyan-600'
+                      to_color='to-green-500'
                     />
+                  </div>
+                  <div class="flex mt-6">
+                    <p class="text-xl">
+                      Educational attainment
+                    </p>
+                  </div>
+                  <div class="h-96">
+                    <Test />
                   </div>
                 </div>
               </div>

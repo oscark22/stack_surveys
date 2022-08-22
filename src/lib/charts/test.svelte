@@ -29,12 +29,13 @@
           line: {
             tension: 0.25,
           },
-        }
+        },
+
       }
     });
   });
 </script>
 
-<canvas bind:this={canvas}>
+<canvas bind:this={canvas} height="100">
   <p>Hello Fallback World</p>
 </canvas>
