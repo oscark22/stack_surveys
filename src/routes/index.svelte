@@ -93,9 +93,6 @@ import Test from "$lib/charts/test.svelte";
                       to_color='to-yellow-200'
                     />
                   </div>
-                  <div>
-                    <Test />
-                  </div>
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import Chart from 'chart.js/auto';
-  import { onMount } from 'svelte'
 
   let canvas: HTMLCanvasElement;
   
@@ -8,22 +8,33 @@
   const chartData = {
     labels: labels,
     datasets: [{
-      label: 'My First Dataset',
+      label: 'Donuts',
       data: [65, 59, 80, 81, 56, 55, 40],
-      fill: false,
-      borderColor: 'rgb(75, 192, 192)',
-      tension: 0.1,
+      borderColor: 'rgb(75, 192, 192, 0.6)',
+      pointBackgroundColor: 'rgb(75, 192, 192)',
+      backgroundColor: 'rgb(75, 192, 192, 0.2)',
+      fill: true,
     }],
   };
   
   onMount(() => {
     new Chart(canvas, {
       type: 'line',
-      data: chartData
+      data: chartData,
+      options: {
+        elements: {
+          point: {
+            radius: 4,
+          },
+          line: {
+            tension: 0.25,
+          },
+        }
+      }
     });
   });
 </script>
 
-<canvas bind:this={canvas} width="400" height="100">
+<canvas bind:this={canvas}>
   <p>Hello Fallback World</p>
 </canvas>
