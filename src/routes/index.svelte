@@ -16,24 +16,28 @@ import Test from "$lib/charts/test.svelte";
               <div class="h-full">
                 <div class="sticky top-0">
                   <div class="block">
-                    <div class="flex px-6 pt-6 pb-4">
-                      <p class="text-lg font-bold">
-                        Menu
-                      </p>
+                    <div class="flex-1">
+                      <div class="py-3 bg-gradient-to-r from-slate-900 to-slate-700">
+                        <p class="text-center text-white text-lg font-semibold">
+                          Topics
+                        </p>  
+                      </div>
                     </div>
-                    <div class="flex px-6 py-2">
+                    <div class="flex-1 px-6 py-6">
                       <nav class="font-semibold">
-                        <ul class="mb-6 space-y-2">
+                        <ul class="mb-6 space-y-4">
                           <li>
                             <p>
                               Random
                             </p>
                           </li>
+                          <hr />
                           <li>
                             <p>
                               Element
                             </p>
                           </li>
+                          <hr />
                         </ul>
                       </nav>
                     </div>
@@ -58,7 +62,7 @@ import Test from "$lib/charts/test.svelte";
                       <h1 class="text-xl lg:text-2xl font-semibold">
                         About this webpage
                       </h1>
-                      <p class="bg-white w-8 h-0.5 my-2">
+                      <p class="bg-white w-8 h-0.5 my-2" />
                       <!-- body card -->
                       <p class="leading-relaxed pt-6">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam possimus necessitatibus.
@@ -76,7 +80,7 @@ import Test from "$lib/charts/test.svelte";
                       <h1 class="text-xl lg:text-2xl font-semibold">
                         About licencing
                       </h1>
-                      <p class="bg-white w-8 h-0.5 my-2">
+                      <p class="bg-white w-8 h-0.5 my-2" />
                       <!-- body card -->
                       <p class="leading-relaxed pt-6">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum libero eum fugit laborum fuga. Veniam ex ab eaque sunt culpa maxime nulla repellendus sapiente minus, molestiae, minima hic eveniet vitae.
