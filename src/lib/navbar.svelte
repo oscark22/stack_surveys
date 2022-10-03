@@ -13,15 +13,11 @@
           <nav class="font-semibold">
             <ul class="mb-6 space-y-4">
               <li>
-                <p>
-                  Comments
-                </p>
+                <a href="/">Home</a>
               </li>
               <hr />
               <li>
-                <p>
-                  Element
-                </p>
+                <a href="/comments">Comments</a>
               </li>
               <hr />
             </ul>

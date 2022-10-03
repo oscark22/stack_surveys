@@ -3,7 +3,7 @@
   import Navbar from '$lib/navbar.svelte';
 </script>
 
-<div class="sticky flex justify-center py-3 border-b border-gray-300">
+<div class="sticky flex justify-center p-3 border-b border-gray-300">
   <img src="placeholder.png" alt="placeholder">
 </div>
 <body>
@@ -12,7 +12,13 @@
       <div class="h-full">
         <div class="flex">
           <Navbar />
-          <slot />
+          <div class="flex-1">
+            <div class="h-full p-4 lg:p-6">
+              <div class="flex-1 h-full">
+                <slot />
+              </div>
+            </div>
+          </div>          
         </div>
       </div>
     </div>

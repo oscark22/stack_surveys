@@ -33,8 +33,11 @@
       }
     });
   });
+
+  let height: number = 100;
+  export { height };
 </script>
 
-<canvas bind:this={canvas} height="100">
+<canvas bind:this={canvas} height={ height }>
   <p>Hello Fallback World</p>
 </canvas>
