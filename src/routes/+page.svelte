@@ -1,6 +1,6 @@
 <script lang="ts">
-import Banner from "$lib/banner.svelte";
-import Test from "$lib/charts/test.svelte";
+  import Banner from "$lib/banner.svelte";
+  import Test from "$lib/charts/test.svelte";
 </script>
 
 <body>

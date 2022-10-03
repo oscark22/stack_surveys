@@ -1,6 +1,6 @@
 <script lang="ts">
+	import Chart from 'chart.js/auto';
   import { onMount } from 'svelte';
-  import Chart from 'chart.js/auto';
 
   let canvas: HTMLCanvasElement;
   
@@ -30,7 +30,6 @@
             tension: 0.25,
           },
         },
-
       }
     });
   });
