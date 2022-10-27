@@ -7,6 +7,6 @@
 
 <TextArea placeholderText={placeholderText} />
 <div class="flex gap-2">
-  <BlueButton text="Edit" />
+  <BlueButton text="Confirm" />
   <BlueButton text="Cancel" />
 </div>

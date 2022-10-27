@@ -1,5 +1,5 @@
 <script lang="ts">
-	import EditCommentTextArea from "./editCommentTextArea.svelte";
+	import EditCommentForm from "./editCommentForm.svelte";
 
   let editComment: boolean = false;
   let placeholderText: string;
@@ -19,7 +19,7 @@
     <span>2 minutes ago</span>
   </p>
   {#if editComment}
-    <EditCommentTextArea placeholderText={placeholderText} />
+    <EditCommentForm placeholderText={placeholderText} />
   {:else}
     <p>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates facere impedit perferendis ab tenetur, provident ipsum mollitia! Recusandae dolorum, unde rerum qui quod perferendis quam sapiente? Eius similique nobis obcaecati.

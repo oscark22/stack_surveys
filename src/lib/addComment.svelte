@@ -1,5 +1,5 @@
 <script lang="ts">
-	import CreateCommentTextArea from "./createCommentTextArea.svelte";
+	import CreateCommentForm from "./createCommentForm.svelte";
   
   let addComment: boolean = true;
 
@@ -22,6 +22,6 @@
     </button>
   </div>
   {#if addComment}
-    <CreateCommentTextArea />
+    <CreateCommentForm />
   {/if}
 </div>
