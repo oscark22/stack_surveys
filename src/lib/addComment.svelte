@@ -1,6 +1,6 @@
 <script lang="ts">
-  import CommentTextArea from './commentTextArea.svelte'
-
+	import CreateCommentTextArea from "./createCommentTextArea.svelte";
+  
   let addComment: boolean = true;
 
   function toggleAddComment() {
@@ -22,6 +22,6 @@
     </button>
   </div>
   {#if addComment}
-    <CommentTextArea buttonText="Create" />
+    <CreateCommentTextArea />
   {/if}
 </div>

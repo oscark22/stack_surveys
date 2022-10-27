@@ -10,5 +10,5 @@
 />
 <div>
   <AddComment />
-  <Comment />
+  <Comment placeholderText="something" />
 </div>
