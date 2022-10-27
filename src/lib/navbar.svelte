@@ -12,11 +12,11 @@
         <div class="flex-1 px-6 py-6">
           <nav class="font-semibold">
             <ul class="mb-6 space-y-4">
-              <li>
+              <li class="hover:text-blue-600">
                 <a href="/">Home</a>
               </li>
               <hr />
-              <li>
+              <li class="hover:text-blue-600">
                 <a href="/comments">Comments</a>
               </li>
               <hr />
