@@ -1,7 +1,10 @@
 <script lang="ts">
-  export let text: string;
+  let text: string;
+  let someFunction: () => void;
+
+  export { text, someFunction }
 </script>
 
-<button class="py-2 px-8 bg-blue-50 rounded-md text-blue-600 hover:bg-blue-100">
+<button on:click={someFunction} class="py-2 px-8 bg-blue-50 rounded-md text-blue-600 hover:bg-blue-100">
   {text}
 </button>
