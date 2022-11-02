@@ -34,10 +34,9 @@
     });
   });
 
-  let height: number = 100;
-  export { height };
+  export let height: number;
 </script>
 
-<canvas bind:this={canvas} height={ height }>
+<canvas bind:this={canvas} height={height}>
   <p>Hello Fallback World</p>
 </canvas>

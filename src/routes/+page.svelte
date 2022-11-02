@@ -9,8 +9,8 @@
   title="Stack Developer Survey" 
   subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit." 
 />
-<div class="lg:flex lg:space-x-6">
-  <div class="text-white lg:w-7/12 rounded-md p-6 lg:p-8 pb-20 lg:pb-40 mb-40 sm:mb-4 bg-gradient-to-tl from-emerald-500 to-blue-600">
+<div class="flex flex-col lg:flex-row lg:space-x-6">
+  <div class="text-white lg:w-7/12 rounded-md p-6 lg:p-8 lg:pb-40 mb-6 sm:mb-4 bg-gradient-to-tl from-emerald-500 to-blue-600">
     <!-- title card -->
     <h1 class="text-xl lg:text-2xl font-semibold">
       About this webpage
@@ -28,7 +28,7 @@
       Overview ->
     </button>
   </div>
-  <div class="text-white lg:w-5/12 rounded-md p-6 lg:p-8 pb-40 lg:pb-40 mb-4 bg-gradient-to-tl from-purple-500 to-blue-600">
+  <div class="text-white lg:w-5/12 rounded-md p-6 lg:p-8 lg:pb-40 bg-gradient-to-tl from-purple-500 to-blue-600">
     <!-- title card -->
     <h1 class="text-xl lg:text-2xl font-semibold">
       About licencing
@@ -43,7 +43,7 @@
     </p>
   </div>
 </div>
-<div class="mt-20">
+<div class="mt-32">
   <Banner
     title='Developer profile'
     from_color='from-cyan-600'
@@ -55,4 +55,4 @@
     Educational attainment
   </p>
 </div>
-<Test />
+<Test height={300} />
