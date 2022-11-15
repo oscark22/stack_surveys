@@ -34,9 +34,26 @@
     });
   });
 
+  // testing
+  async function example() {
+    try {
+      const promise = await fetch('http://127.0.0.1:8000/loved_languages', {
+        method: 'GET'
+      })
+      const data = await promise.json()
+      console.log
+      return data
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
   export let height: number;
 </script>
 
 <canvas bind:this={canvas} height={height}>
   <p>Hello Fallback World</p>
 </canvas>
+
+<button on:click={example}>Adlkfjalfjslkan</button>
+

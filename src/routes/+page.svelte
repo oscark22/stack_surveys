@@ -28,7 +28,7 @@
       Overview ->
     </button>
   </div>
-  <div class="text-white lg:w-5/12 rounded-md p-6 lg:p-8 lg:pb-40 bg-gradient-to-tl from-purple-500 to-blue-600">
+  <div class="text-white lg:w-5/12 rounded-md p-6 lg:p-8 lg:pb-40 mb-6 sm:mb-4 bg-gradient-to-tl from-purple-500 to-blue-600">
     <!-- title card -->
     <h1 class="text-xl lg:text-2xl font-semibold">
       About licencing
@@ -55,4 +55,4 @@
     Educational attainment
   </p>
 </div>
-<Test height={300} />
+<Test height={70} />
