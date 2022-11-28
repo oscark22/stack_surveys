@@ -68,12 +68,6 @@
     }
 
     const options = {
-      // plugins: {
-      //   title: {
-      //     display: true,
-      //     text: "Most popular programming languages"
-      //   }
-      // },
       scales: {
         x: {
           title: {

@@ -45,14 +45,20 @@
 </div>
 <div class="mt-32">
   <Banner
-    title='Developer profile'
-    from_color='from-cyan-600'
-    to_color='to-green-500'
+    title='Technology'
+    from_color='from-cyan-500'
+    to_color='to-blue-500'
   />
 </div>
-<div class="flex mt-6 mb-4">
-  <p class="text-xl">
-    Educational attainment
-  </p>
+<div>
+  <div class="flex flex-col mt-6 mb-4">
+    <p class="text-xl">
+      Most loved, dreaded and wanted
+    </p>
+    <p class="bg-black w-8 h-0.5 my-2" />
+  </div>
+  <div class="flex mt-2 mb-4 justify-center">
+    Programming, scripting, and markup languages
+  </div>
+  <Test height={100} />
 </div>
-<Test height={100} />
