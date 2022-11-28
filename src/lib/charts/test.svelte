@@ -18,32 +18,49 @@
       total_responses: string    
     }
 
-    let occurrences = Object(), index = 0
+    interface ItemData {
+      index: number[],
+      place: number[],
+      num_responses: number[],
+      total_responses: number[]
+    }
+
+    let itemsData = Object(), index = 0
+
     for (const label of labels) {
       let place = 0
       for (const [language, responses] of Object.entries(chartData[label]["data"])) {
         let response = responses as Responses
 
         place += 1
-        if (occurrences.hasOwnProperty(language)) {
-          occurrences[language].push([index, place, response["num_responses"], response["total_responses"]])
-        } else {
-          occurrences[language] = [[index, place, response["num_responses"], response["total_responses"]]]
+        if (!itemsData.hasOwnProperty(language)) {
+          itemsData[language] = {
+            index: [],
+            place: Array(5).fill(NaN),
+            num_responses: Array(5).fill(NaN),
+            total_responses: Array(5).fill(NaN)
+          }         
         }
+        itemsData[language]["index"].push(index)
+        itemsData[language]["place"][index] = place
+        itemsData[language]["num_responses"][index] = response["num_responses"]
+        itemsData[language]["total_responses"][index] = response["total_responses"]
       }
       index += 1
     }
-    console.log(occurrences)
+    console.log(itemsData)
 
     let datasets = Array()
-    // for (const [language, list] of Object.entries(occurrences)) {
-    //   const data = list as Array<String | Number>
+    for (const [language, object] of Object.entries(itemsData)) {
+      const itemData = object as ItemData
 
-    //   datasets.push({
-    //     label: language,
-    //     data: data[1],
-    //   })
-    // }
+      console.log(itemData["place"])
+
+      datasets.push({
+        label: language,
+        data: itemData["place"]
+      })
+    }
 
     const data = {
       labels: labels,
@@ -51,9 +68,30 @@
     }
 
     const options = {
+      // plugins: {
+      //   title: {
+      //     display: true,
+      //     text: "Most popular programming languages"
+      //   }
+      // },
+      scales: {
+        x: {
+          title: {
+            display: true,
+            text: "Year"
+          }
+        },
+        y: {
+          reverse: true,
+          title: {
+            display: true,
+            text: "Place in ranking"
+          }
+        }
+      },
       elements: {
         point: {
-          radius: 4,
+          radius: 5,
         },
         line: {
           tension: 0.25,

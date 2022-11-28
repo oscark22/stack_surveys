@@ -50,9 +50,9 @@
     to_color='to-green-500'
   />
 </div>
-<div class="flex mt-6">
+<div class="flex mt-6 mb-4">
   <p class="text-xl">
     Educational attainment
   </p>
 </div>
-<Test height={70} />
+<Test height={100} />
