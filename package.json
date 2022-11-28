@@ -37,6 +37,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"chart.js": "^3.9.1"
+		"chart.js": "^4.0.1"
 	}
 }
