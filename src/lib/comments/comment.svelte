@@ -2,13 +2,14 @@
 	import EditCommentForm from "./editCommentForm.svelte";
 
   let editComment: boolean = false;
-  let placeholderText: string;
+  let last_modification: string;
+  let text: string;
 
   function toggleEditComment() {
     editComment = !editComment;
   }
 
-  export { placeholderText };
+  export { text, last_modification };
 </script>
 
 <div class="flex flex-col mb-5">
@@ -16,13 +17,13 @@
     <span>user</span> |
     <button class="underline hover:text-gray-800" on:click={toggleEditComment}>edit</button>,
     <button class="underline hover:text-gray-800">delete</button> |
-    <span>2 minutes ago</span>
+    <span>{ last_modification }</span>
   </p>
   {#if editComment}
-    <EditCommentForm placeholderText={placeholderText} />
+    <EditCommentForm placeholderText={ text } />
   {:else}
     <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates facere impedit perferendis ab tenetur, provident ipsum mollitia! Recusandae dolorum, unde rerum qui quod perferendis quam sapiente? Eius similique nobis obcaecati.
+      { text }
     </p>
   {/if}
 </div>

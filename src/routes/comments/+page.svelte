@@ -1,7 +1,8 @@
 <script lang="ts">
   import Title from '$lib/title.svelte';
-  import Comment from '$lib/comments/comment.svelte';
+  import CommentList from '$lib/comments/commentList.svelte';
   import AddComment from '$lib/comments/addComment.svelte'
+	import Comment from '$lib/comments/comment.svelte';
 </script>
 
 <Title 
@@ -10,5 +11,5 @@
 />
 <div>
   <AddComment />
-  <Comment placeholderText="something" />
+  <CommentList />
 </div>

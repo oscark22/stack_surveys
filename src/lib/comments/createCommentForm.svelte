@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Comment from "./comment.svelte";
   import BlueButton from "../blueButton.svelte";
   import TextArea from "../textArea.svelte";
 
   let commentInformation = '';
+  let commentArray: Array<Array<string>> = Array();
 
   const createComment = async (): Promise<String> => {
     const comment = {
@@ -11,13 +11,12 @@
       text: commentInformation
     }
 
-    console.log(JSON.stringify(comment))
-
     const response = await fetch("http://127.0.0.1:8000/comments", {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(comment)
     })
+
     return response.json();
   }
 </script>
