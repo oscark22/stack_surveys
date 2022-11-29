@@ -8,8 +8,6 @@
     const chartData = await (await fetch(url)).json()
     const labels = Object.keys(chartData)
 
-    console.log(chartData)
-
     interface Responses {
       num_responses: string,
       total_responses: string    
@@ -45,13 +43,10 @@
       }
       index += 1
     }
-    console.log(itemsData)
 
     let datasets = Array()
     for (const [item, object] of Object.entries(itemsData)) {
       const itemData = object as ItemData
-
-      console.log(itemData["place"])
 
       datasets.push({
         label: item,

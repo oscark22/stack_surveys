@@ -1,7 +1,7 @@
 <script lang="ts">
   import Title from '$lib/title.svelte';
-  import Comment from '$lib/comment.svelte';
-  import AddComment from '$lib/addComment.svelte'
+  import Comment from '$lib/comments/comment.svelte';
+  import AddComment from '$lib/comments/addComment.svelte'
 </script>
 
 <Title 
