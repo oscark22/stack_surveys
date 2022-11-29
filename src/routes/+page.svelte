@@ -1,6 +1,6 @@
 <script lang="ts">
   import Banner from "$lib/banner.svelte";
-  import Test from "$lib/charts/test.svelte";
+  import Chart from "$lib/charts/chart.svelte";
   import Title from "$lib/title.svelte";
 </script>
 
@@ -43,22 +43,34 @@
     </p>
   </div>
 </div>
-<div class="mt-32">
+<div class="mt-32 lg:mt-4">
   <Banner
     title='Technology'
     from_color='from-cyan-500'
     to_color='to-blue-500'
   />
 </div>
+<div class="flex flex-col mt-6">
+  <p class="text-xl">
+    Most loved, dreaded and wanted
+  </p>
+  <p class="bg-black w-8 h-0.5 my-2" />
+</div>
 <div>
-  <div class="flex flex-col mt-6 mb-4">
-    <p class="text-xl">
-      Most loved, dreaded and wanted
-    </p>
-    <p class="bg-black w-8 h-0.5 my-2" />
-  </div>
-  <div class="flex mt-2 mb-4 justify-center">
+  <div class="flex mt-10 mb-4 justify-center">
     Programming, scripting, and markup languages
   </div>
-  <Test height={100} />
+  <Chart url="http://127.0.0.1:8000/loved_languages/10" height={100} />
+</div>
+<div>
+  <div class="flex mt-10 mb-4 justify-center">
+    Databases
+  </div>
+  <Chart url="http://127.0.0.1:8000/loved_databases/10" height={100} />
+</div>
+<div>
+  <div class="flex mt-10 mb-4 justify-center">
+    Web frameworks and technologies
+  </div>
+  <Chart url="http://127.0.0.1:8000/loved_frameworks/10" height={100} />
 </div>
