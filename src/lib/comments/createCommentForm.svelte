@@ -7,13 +7,15 @@
 
   const createComment = async (): Promise<String> => {
     const comment = {
-      user_id: 1,
+      user_id: "id1",
       text: commentInformation
     }
 
-    console.log(JSON.stringify(commentInformation))
-    const response = await fetch("/comments", {
+    console.log(JSON.stringify(comment))
+
+    const response = await fetch("http://127.0.0.1:8000/comments", {
       method: 'POST',
+      headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(comment)
     })
     return response.json();
