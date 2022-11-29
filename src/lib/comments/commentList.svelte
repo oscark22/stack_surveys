@@ -2,7 +2,8 @@
 import { onMount } from "svelte";
 import Comment from "./comment.svelte";
 
-export let comments: Array<Array<string>> = Array();
+type Comments = [number, string, string]
+let comments: Comments[] = [];
   
 onMount(async () => {
   const response = await fetch('http://127.0.0.1:8000/comments')
@@ -13,7 +14,8 @@ onMount(async () => {
 
 {#each comments as comment }
   <Comment
-    text={ comment[0] }
-    last_modification={ `${comment[1].slice(0, 10)} ${comment[1].slice(11, 19)}` }
+    id={ comment[0] }
+    text={ comment[1] }
+    last_modification={ `${comment[2].slice(0, 10)} ${comment[2].slice(11, 19)}` }
   />
 {/each}

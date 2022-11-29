@@ -3,9 +3,8 @@
   import TextArea from "../textArea.svelte";
 
   let commentInformation = '';
-  let commentArray: Array<Array<string>> = Array();
 
-  const createComment = async (): Promise<String> => {
+  const createComment = async (): Promise<string> => {
     const comment = {
       user_id: "id1",
       text: commentInformation
