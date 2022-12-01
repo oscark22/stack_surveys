@@ -4,7 +4,10 @@
 
   let commentInformation = '';
 
-  const createComment = async (): Promise<string> => {
+  type Comments = [number, string, string]
+  let comments: Comments[];
+
+  const createComment = async (): Promise<void> => {
     const comment = {
       user_id: "id1",
       text: commentInformation
@@ -16,8 +19,11 @@
       body: JSON.stringify(comment)
     })
 
-    return response.json();
+    const data = await response.json();
+    comments = [data, ...comments]
   }
+
+  export { comments }
 </script>
 
 <TextArea bind:text={commentInformation} />

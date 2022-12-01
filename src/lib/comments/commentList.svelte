@@ -1,5 +1,6 @@
 <script lang="ts">
 import { onMount } from "svelte";
+import AddComment from "./addComment.svelte";
 import Comment from "./comment.svelte";
 
 type Comments = [number, string, string]
@@ -9,8 +10,12 @@ onMount(async () => {
   const response = await fetch('http://127.0.0.1:8000/comments')
   comments = await response.json()
 })
+
+export { comments }
 </script>
 
+
+<AddComment bind:comments={comments} />
 {#each comments as comment }
   <Comment
     id={ comment[0] }
