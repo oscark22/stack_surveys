@@ -11,6 +11,15 @@
     editComment = !editComment;
   }
 
+  const deleteComment = async (): Promise<string> => {
+    const response = await fetch(`http://127.0.0.1:8000/comments/${id}`, {
+      method: 'DELETE'
+    })
+
+    const data = await response.json()
+    return data
+  }
+
   export { id, text, last_modification };
 </script>
 
@@ -18,7 +27,7 @@
   <p class="text-sm text-gray-600 mb-1">
     <span>user</span> |
     <button class="underline hover:text-gray-800" on:click={toggleEditComment}>edit</button>,
-    <button class="underline hover:text-gray-800">delete</button> |
+    <button class="underline hover:text-gray-800" on:click={deleteComment}>delete</button> |
     <span>{ last_modification }</span>
   </p>
   {#if editComment}

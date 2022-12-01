@@ -8,7 +8,6 @@ let comments: Comments[] = [];
 onMount(async () => {
   const response = await fetch('http://127.0.0.1:8000/comments')
   comments = await response.json()
-  console.log(comments)
 })
 </script>
 
