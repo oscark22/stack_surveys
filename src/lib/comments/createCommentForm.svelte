@@ -1,10 +1,9 @@
 <script lang="ts">
   import BlueButton from "../blueButton.svelte";
   import TextArea from "../textArea.svelte";
+  import type { Comments } from "src/types/Comments";
 
   let commentInformation = '';
-
-  type Comments = [number, string, string]
   let comments: Comments[];
 
   const createComment = async (): Promise<void> => {

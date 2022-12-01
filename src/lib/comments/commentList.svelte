@@ -2,8 +2,8 @@
 import { onMount } from "svelte";
 import AddComment from "./addComment.svelte";
 import Comment from "./comment.svelte";
+import type { Comments } from "src/types/Comments";
 
-type Comments = [number, string, string]
 let comments: Comments[] = [];
   
 onMount(async () => {
@@ -18,6 +18,7 @@ export { comments }
 <AddComment bind:comments={comments} />
 {#each comments as comment }
   <Comment
+    bind:comments={comments}
     id={ comment[0] }
     text={ comment[1] }
     last_modification={ `${comment[2].slice(0, 10)} ${comment[2].slice(11, 19)}` }

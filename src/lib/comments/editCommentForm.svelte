@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from "svelte";
   import BlueButton from "../blueButton.svelte";
   import TextArea from "../textArea.svelte";
 
@@ -6,7 +7,7 @@
   let commentId: number;
   let toggleEdit: () => void;
 
-  const updateComment = async (): Promise<string> => {
+  const updateComment = async (): Promise<void> => {
     const comment = {
       user_id: "id1",
       text: text
@@ -17,8 +18,17 @@
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(comment)
     })
-    const data = await response.json()
-    return data
+    toggleEdit()
+  }
+
+  let originalMessage = '';
+  onMount(() => {
+    originalMessage = text;
+  })
+
+  const cancelEdit = () => {
+    text = originalMessage;
+    toggleEdit();
   }
 
   export { text, commentId, toggleEdit }
@@ -27,5 +37,5 @@
 <TextArea bind:text={text} />
 <div class="flex gap-2">
   <BlueButton text="Confirm" someFunction={updateComment} />
-  <BlueButton text="Cancel" someFunction={toggleEdit} />
+  <BlueButton text="Cancel" someFunction={cancelEdit} />
 </div>

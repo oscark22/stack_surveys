@@ -1,11 +1,14 @@
 <script lang="ts">
 	import EditCommentForm from "./editCommentForm.svelte";
+  import type { Comments } from "src/types/Comments";
 
   let editComment: boolean = false;
   
   let id: number;
   let last_modification: string;
   let text: string;
+
+  let comments: Comments[];
 
   function toggleEditComment() {
     editComment = !editComment;
@@ -15,12 +18,16 @@
     const response = await fetch(`http://127.0.0.1:8000/comments/${id}`, {
       method: 'DELETE'
     })
+  
+    comments = comments.filter((array) => {
+      return array[0] != id
+    })
 
     const data = await response.json()
     return data
   }
 
-  export { id, text, last_modification };
+  export { id, text, last_modification, comments };
 </script>
 
 <div class="flex flex-col mb-5">

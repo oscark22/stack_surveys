@@ -1,10 +1,8 @@
 <script lang="ts">
-	import Comment from "./comment.svelte";
 	import CreateCommentForm from "./createCommentForm.svelte";
+  import type { Comments } from "src/types/Comments";
   
   let addComment: boolean = true;
-  
-  type Comments = [number, string, string]
   let comments: Comments[];
 
   function toggleAddComment() {
