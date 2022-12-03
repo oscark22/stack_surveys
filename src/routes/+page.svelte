@@ -24,7 +24,7 @@
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed temporibus distinctio sunt odio, itaque nemo excepturi at laudantium quam quia, id commodi soluta. Reprehenderit eius voluptate ea quam deleniti similique.
     </p>
     <br>
-    <button class="bg-slate-900 py-2 px-8 rounded-md">
+    <button class="bg-slate-900 py-2 px-8 rounded-md hover:bg-blue-900">
       Overview ->
     </button>
   </div>
